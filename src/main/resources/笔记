@@ -1,0 +1,21 @@
+简介：
+spring的入门案例，启动起来，然后访问hello映射
+需要两个基本的依赖：
+<!--父工程-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+    </parent>
+    <!--依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+过程中遇到的问题：
+
+启动类放到了src下，报了一个错误：Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
+
